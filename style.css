@@ -1,0 +1,28 @@
+body {
+  background-color: #eee;
+}
+#brand {
+  font-size: 35px;
+  font-family: Futura;
+}
+.navText {
+  color: #fff !important;
+}
+.menuText:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+} 
+@media (max-width: 500px){
+  #brand {
+    font-size: 20px !important;
+    line-height: 22px;
+  }
+}
+.bodyMain {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.img-fluid {
+  width: 100%;
+}
