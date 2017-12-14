@@ -47,3 +47,28 @@ body {
 .jumbotron {
   padding-top: 0;
 }
+.footer {
+  padding-top: 15px;
+  height: 80px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #333;
+}
+.footerText {
+  color: #fff;
+  font-family: Futura;
+  font-weight: 100;
+  display: inline;
+}
+.footerText:hover {
+  color: #F3889E !important;
+}
+.social {
+  text-align: right;
+}
+.socialIcon {
+  color: #fff;
+}
+.socialIcon:hover {
+  color: #84B8C9 !important;
+}
