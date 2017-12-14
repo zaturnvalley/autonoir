@@ -5,12 +5,19 @@ body {
   font-size: 35px;
   font-family: Futura;
 }
+#brand:hover {
+  color: #F3889E !important;
+}
+.navbar {
+  border-radius: 0%;
+}
 .navText {
   color: #fff !important;
 }
 .menuText:hover {
   border-bottom: 2px solid #fff;
   padding-bottom: 5px;
+  color: #84B8C9 !important;
 } 
 @media (max-width: 500px){
   #brand {
@@ -30,6 +37,9 @@ body {
 }
 .img-fluid {
   width: 100%;
+}
+.img-fluid:hover {
+  opacity: .7;
 }
 .aboutContainer {
   width: 80%;
