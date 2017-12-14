@@ -23,6 +23,11 @@ body {
   text-align: center;
   margin: 0 auto;
 }
+.musicMain {
+  width: 86%;
+  text-align: center;
+  margin: 0 auto;
+}
 .img-fluid {
   width: 100%;
 }
