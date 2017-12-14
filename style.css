@@ -31,3 +31,9 @@ body {
 .img-fluid {
   width: 100%;
 }
+.aboutContainer {
+  width: 80%;
+}
+.jumbotron {
+  padding-top: 0;
+}
