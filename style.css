@@ -1,6 +1,27 @@
 body {
-  background-color: #eee;
+  background: linear-gradient(100deg, #F3889E, #84B8C9);
+  -webkit-animation: ColorChange 3s ease infinite;
+  -moz-animation: ColorChange 3s ease infinite;
+  animation: ColorChange 3s ease infinite;
+  min-height: 100%;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+
 #brand {
   font-size: 35px;
   font-family: Futura;
