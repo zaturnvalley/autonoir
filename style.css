@@ -3,7 +3,7 @@ body {
   -webkit-animation: ColorChange 3s ease infinite;
   -moz-animation: ColorChange 3s ease infinite;
   animation: ColorChange 3s ease infinite;
-  min-height: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes AnimationName {
@@ -21,7 +21,13 @@ body {
     50%{background-position:48% 100%}
     100%{background-position:53% 0%}
 }
-
+.wrap {
+  min-height: 100%;
+  position: relative;
+}
+.content {
+  padding-bottom: 100px;
+}
 #brand {
   font-size: 35px;
   font-family: Futura;
@@ -73,6 +79,9 @@ body {
   height: 80px;
   margin: 0 auto;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: #333;
 }
 .footerText {
