@@ -1,9 +1,9 @@
-body {
+html, body {
   background: linear-gradient(100deg, #F3889E, #84B8C9);
   -webkit-animation: ColorChange 3s ease infinite;
   -moz-animation: ColorChange 3s ease infinite;
   animation: ColorChange 3s ease infinite;
-  height: 100%;
+  min-height: 100%;
 }
 
 @-webkit-keyframes AnimationName {
