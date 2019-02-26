@@ -19,19 +19,41 @@ body {
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
 }
 @keyframes AnimationName { 
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+  0%{background-position:53% 0%}
+  50%{background-position:48% 100%}
+  100%{background-position:53% 0%}
+}
+.listenContainer {
+    width: 90%;
+    margin: 4% auto;
+    display: flex;
+}
+#listen {
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #fcfcfc;
+  padding: 1em 3em;
+  color: #fcfcfc;
+  background: rgba(250,250,250,0);
+  width: 90%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#listen:hover {
+  border: none;
+  background: #fcfcfc;
+    color: #F3889E;
 }
 .wrap {
   min-height: 100vh;
@@ -58,6 +80,33 @@ body {
   padding-bottom: 5px;
   color: #84B8C9 !important;
 } 
+.albums {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 4% auto 8%;
+}
+.album {
+  width: 50%;
+  margin: 0 2%;
+}
+@media (max-width: 768px) {
+  .albums {
+    flex-direction: column;
+    width: 90%;
+  }
+  .album {
+    width: 100%;
+    margin: 0;
+  }
+  .listenContainer {
+    width: 90%;
+  }
+  #listen {
+    width: 100%;
+  }
+}
+
 @media (max-width: 500px){
   #brand {
     font-size: 20px !important;
