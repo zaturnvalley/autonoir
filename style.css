@@ -34,26 +34,30 @@ body {
   100%{background-position:53% 0%}
 }
 .listenContainer {
-    width: 90%;
-    margin: 4% auto;
-    display: flex;
+  width: 90%;
+  margin: 4% auto;
+  display: flex;
 }
 #listen {
   margin: 0 auto;
   text-align: center;
-  border: 2px solid #fcfcfc;
+  border: 2px solid rgba(252, 252, 252, .6);
   padding: 1em 3em;
   color: #fcfcfc;
-  background: rgba(250,250,250,0);
+  background: rgba(250,250,250,0.3);
   width: 90%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 #listen:hover {
-  border: none;
-  background: #fcfcfc;
-    color: #F3889E;
+  border: 2px solid rgba(252, 252, 252, .6);
+  background: rgba(252, 252, 252, .8);
+  color: #F3889E;
 }
 .wrap {
   min-height: 100vh;
@@ -90,29 +94,7 @@ body {
   width: 50%;
   margin: 0 2%;
 }
-@media (max-width: 768px) {
-  .albums {
-    flex-direction: column;
-    width: 90%;
-  }
-  .album {
-    width: 100%;
-    margin: 0;
-  }
-  .listenContainer {
-    width: 90%;
-  }
-  #listen {
-    width: 100%;
-  }
-}
 
-@media (max-width: 500px){
-  #brand {
-    font-size: 20px !important;
-    line-height: 22px;
-  }
-}
 .bodyMain {
   width: 60%;
   text-align: center;
@@ -130,11 +112,11 @@ body {
 .img-fluid:hover {
   opacity: .7;
 }
-.aboutContainer {
-  width: 80%;
-}
-.jumbotron {
-  padding-top: 0;
+.jumbo {
+  padding: 0 60px;
+  width: 100%;
+  border-radius: 6px;
+  background: #eee;
 }
 .footer {
   padding-top: 15px;
@@ -163,4 +145,32 @@ body {
 }
 .socialIcon:hover {
   color: #84B8C9 !important;
+}
+@media (max-width: 500px){
+  #brand {
+    font-size: 20px !important;
+    line-height: 22px;
+  }
+  #listen {
+    font-size: 1em;
+  }
+}
+@media (max-width: 769px) {
+  .albums {
+    flex-direction: column;
+    width: 90%;
+  }
+  .album {
+    width: 100%;
+    margin: 0;
+  }
+  .listenContainer {
+    width: 90%;
+  }
+  #listen {
+    width: 100%;
+  }
+  .jumbo {
+    padding: 20px;
+  }
 }
