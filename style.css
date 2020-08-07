@@ -1,186 +1,229 @@
-  html {
-    position: relative;
-    min-height: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
+html {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
-  body {
-    background: linear-gradient(100deg, #F3889E, #84B8C9);
-    -webkit-animation: ColorChange 3s ease infinite;
-    -moz-animation: ColorChange 3s ease infinite;
-    animation: ColorChange 3s ease infinite;
-    overflow-x: hidden;
-    margin: 0px;
-    position: relative;
-    min-height: 100%;
-    height: auto;
-  }
+body {
+  background: linear-gradient(100deg, #f3889e, #84b8c9);
+  -webkit-animation: ColorChange 3s ease infinite;
+  -moz-animation: ColorChange 3s ease infinite;
+  animation: ColorChange 3s ease infinite;
+  overflow-x: hidden;
+  margin: 0px;
+  position: relative;
+  min-height: 100%;
+  height: auto;
+}
 
-  @-webkit-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+a {
+  color: #fff;
+}
+
+p, h2, h3 {
+  color: #333;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 53% 0%;
   }
-  @-moz-keyframes AnimationName {
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+  50% {
+    background-position: 48% 100%;
   }
-  @keyframes AnimationName { 
-    0%{background-position:53% 0%}
-    50%{background-position:48% 100%}
-    100%{background-position:53% 0%}
+  100% {
+    background-position: 53% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 53% 0%;
+  }
+  50% {
+    background-position: 48% 100%;
+  }
+  100% {
+    background-position: 53% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 53% 0%;
+  }
+  50% {
+    background-position: 48% 100%;
+  }
+  100% {
+    background-position: 53% 0%;
+  }
+}
+
+.listenContainer {
+  width: 90%;
+  margin: 4% auto;
+  display: flex;
+}
+
+#listen {
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid rgba(252, 252, 252, 0.6);
+  padding: 1em 3em;
+  color: #fcfcfc;
+  background: rgba(250, 250, 250, 0.3);
+  width: 90%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4em;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#listen:hover {
+  border: 2px solid rgba(252, 252, 252, 0.6);
+  background: rgba(252, 252, 252, 0.8);
+  color: #f3889e;
+}
+.wrap {
+  min-height: 100vh;
+  position: relative;
+}
+.content {
+  padding-bottom: 100px;
+}
+#brand {
+  font-size: 35px;
+  font-family: Futura;
+}
+#brand:hover {
+  color: #f3889e !important;
+}
+.navbar {
+  border-radius: 0%;
+}
+.navText {
+  color: #fff !important;
+}
+
+.menuText:hover {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  color: #84b8c9 !important;
+}
+
+.albums {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 4% auto 8%;
+}
+
+.album {
+  width: 50%;
+  margin: 0 2%;
+}
+
+.bodyMain {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.musicMain {
+  width: 86%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img-fluid {
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+.img-fluid:hover {
+  opacity: 0.7;
+}
+
+.jumbo {
+  padding: 0 60px;
+  width: 100%;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.jumbo-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 4% auto 8%;
+}
+
+.footer {
+  padding-top: 15px;
+  height: 80px;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+
+.footerText {
+  color: #fff;
+  font-family: Futura;
+  font-weight: 100;
+  display: inline;
+}
+.footerText:hover {
+  color: #f3889e !important;
+}
+
+.social {
+  text-align: right;
+}
+
+.socialIcon {
+  color: #fff;
+}
+
+.socialIcon:hover {
+  color: #84b8c9 !important;
+}
+
+@media (max-width: 500px) {
+  #brand {
+    font-size: 20px !important;
+    line-height: 22px;
+  }
+  #listen {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 769px) {
+  .albums {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 12%;
+  }
+  .album {
+    width: 100%;
+    margin: 0;
   }
   .listenContainer {
     width: 90%;
-    margin: 4% auto;
-    display: flex;
   }
   #listen {
-    margin: 0 auto;
-    text-align: center;
-    border: 2px solid rgba(252, 252, 252, .6);
-    padding: 1em 3em;
-    color: #fcfcfc;
-    background: rgba(250,250,250,0.3);
-    width: 90%;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1.4em;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-  }
-  #listen:hover {
-    border: 2px solid rgba(252, 252, 252, .6);
-    background: rgba(252, 252, 252, .8);
-    color: #F3889E;
-  }
-  .wrap {
-    min-height: 100vh;
-    position: relative;
-  }
-  .content {
-    padding-bottom: 100px;
-  }
-  #brand {
-    font-size: 35px;
-    font-family: Futura;
-  }
-  #brand:hover {
-    color: #F3889E !important;
-  }
-  .navbar {
-    border-radius: 0%;
-  }
-  .navText {
-    color: #fff !important;
-  }
-  .menuText:hover {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 5px;
-    color: #84B8C9 !important;
-  } 
-  .albums {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 4% auto 8%;
-  }
-  .album {
-    width: 50%;
-    margin: 0 2%;
-  }
-
-  .bodyMain {
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .musicMain {
-    width: 86%;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .img-fluid {
     width: 100%;
-    padding-bottom: 4%;
-  }
-  .img-fluid:hover {
-    opacity: .7;
   }
   .jumbo {
-    padding: 0 60px;
-    width: 100%;
-    border-radius: 6px;
-    background: #eee;
+    padding: 0 15px;
   }
   .jumbo-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 4% auto 8%;
-  }
-  .footer {
-    padding-top: 15px;
-    height: 80px;
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #333;
-  }
-  .footerText {
-    color: #fff;
-    font-family: Futura;
-    font-weight: 100;
-    display: inline;
-  }
-  .footerText:hover {
-    color: #F3889E !important;
-  }
-  .social {
-    text-align: right;
-  }
-  .socialIcon {
-    color: #fff;
-  }
-  .socialIcon:hover {
-    color: #84B8C9 !important;
-  }
-  @media (max-width: 500px){
-    #brand {
-      font-size: 20px !important;
-      line-height: 22px;
-    }
-    #listen {
-      font-size: 1em;
-    }
-  }
-  @media (max-width: 769px) {
-    .albums {
-      flex-direction: column;
-      width: 90%;
-      margin-bottom: 12%;
-    }
-    .album {
-      width: 100%;
-      margin: 0;
-    }
-    .listenContainer {
-      width: 90%;
-    }
-    #listen {
-      width: 100%;
-    }
-    .jumbo {
-      padding: 0 15px;
-    }
-    .jumbo-wrapper {
     display: flex;
     flex-direction: row;
     width: 98%;
@@ -192,4 +235,4 @@
   .jumbo-wrapper h2 {
     font-size: 2em;
   }
-  }
+}
