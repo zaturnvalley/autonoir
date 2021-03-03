@@ -96,7 +96,7 @@ p, h2, h3 {
 }
 #brand {
   font-size: 35px;
-  font-family: Futura;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
 }
 #brand:hover {
   color: #f3889e !important;
@@ -148,10 +148,10 @@ p, h2, h3 {
 }
 
 .jumbo {
-  padding: 0 60px;
+  padding: 10px 60px 20px;
   width: 100%;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .jumbo-wrapper {
@@ -159,6 +159,7 @@ p, h2, h3 {
   flex-direction: row;
   width: 90%;
   margin: 4% auto 8%;
+  padding-bottom: 2%;
 }
 
 .footer {
@@ -174,7 +175,7 @@ p, h2, h3 {
 
 .footerText {
   color: #fff;
-  font-family: Futura;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
   font-weight: 100;
   display: inline;
 }
@@ -227,7 +228,7 @@ p, h2, h3 {
     display: flex;
     flex-direction: row;
     width: 98%;
-    margin: 4% auto 30%;
+    margin: 4% auto 20%;
   }
   .jumbo-wrapper p {
     font-size: 1.2em;
